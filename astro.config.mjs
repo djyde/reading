@@ -12,6 +12,10 @@ export default defineConfig({
 				github: 'https://github.com/djyde',
 				twitter: "https://twitter.com/randyloop"
 			},
+			customCss: [
+				'./src/styles/custom.css',
+				'@fontsource-variable/noto-sans-sc/index.css'
+			],
 			tableOfContents: false,
 			sidebar: [
 				{
