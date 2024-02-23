@@ -3,23 +3,24 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: "https://read.lutaonan.com",
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: `Randy 的读书乐园`,
+			description: "Randy 的读书乐园",
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/djyde',
+				twitter: "https://twitter.com/randyloop"
 			},
+			tableOfContents: false,
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
+					label: "前言",
+					link: "/preface"
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: '书评',
+					autogenerate: { directory: 'books' },
 				},
 			],
 		}),
