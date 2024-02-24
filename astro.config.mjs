@@ -8,6 +8,16 @@ export default defineConfig({
 		starlight({
 			title: `Randy 的读书乐园`,
 			description: "Randy 的读书乐园",
+			head: [
+				{
+					tag: "script",
+					attrs: {
+						async: true,
+						'data-website-id': "4254cfbd-aaa3-482b-89c1-856dabe78be6",
+						src: 'https://randy-umami.zeabur.app/script.js'
+					}
+				}
+			],
 			social: {
 				github: 'https://github.com/djyde',
 				twitter: "https://twitter.com/randyloop"
